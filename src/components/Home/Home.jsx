@@ -1,5 +1,6 @@
 import Banner from "../Others/Banner/Banner";
 import IntroVideo from "../Others/IntroVideo/IntroVideo";
+import ServicesCarousel from "../Others/ServicesCarousel/ServicesCarousel";
 import Work from "../Others/Work/Work";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
       <Banner></Banner>
       <IntroVideo></IntroVideo>
       <Work></Work>
+      <ServicesCarousel></ServicesCarousel>
     </div>
   );
 };
