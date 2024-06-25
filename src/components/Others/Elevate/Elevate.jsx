@@ -13,8 +13,8 @@ const Elevate = () => {
         style={styles}
         className="flex justify-center items-center min-h-60 lg:h-[30vh] rounded-badge"
       >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 px-10">
-          <h2 className="text-4xl lg:text-6xl font-sans font-medium text-white">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-10">
+          <h2 className="text-4xl lg:text-5xl font-sans font-medium text-white lg:pr-5">
             Elevate Your Brand Today!
           </h2>
           <div>
