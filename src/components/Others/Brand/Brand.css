@@ -4,7 +4,7 @@
 
 .carousel-container {
   display: flex;
-  animation: scroll 25s linear infinite;
+  animation: scroll 25s infinite;
 }
 
 @keyframes scroll {
@@ -12,6 +12,6 @@
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-70%);
+    transform: translateX(-90%);
   }
 }

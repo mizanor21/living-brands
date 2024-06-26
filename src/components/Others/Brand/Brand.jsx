@@ -20,7 +20,7 @@ const Brand = () => {
         Our Beloved Brands
       </h3>
       <div className="carousel-wrapper">
-        <div className="carousel-container">
+        <div className="carousel-container gap-5">
           <div className="carousel-item">
             <img
               className="saturate-0 h-20 hover:saturate-100"
