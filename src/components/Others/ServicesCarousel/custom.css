@@ -1,8 +1,7 @@
-/* Custom CSS for slick arrows */
-.slick-prev:before,
-.slick-next:before {
-  color: #185c5d;
-  font-size: 55px;
+.slick-slider .slick-prev:before,
+.slick-slider .slick-next:before {
+  color: #185c5d !important;
+  font-size: 55px !important;
 }
 
 /* Ensure the container takes up the specified height */

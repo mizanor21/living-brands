@@ -1,5 +1,17 @@
-/* Custom CSS for slick arrows */
-.slick-prev:before,
-.slick-next:before {
-  display: none;
+.carousel-wrapper {
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  animation: scroll 25s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-70%);
+  }
 }
