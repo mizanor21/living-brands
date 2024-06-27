@@ -3,21 +3,21 @@ import arrowIcon from "../../../assets/images/about-arrow.png";
 
 const About = () => {
   const styles = {
-    display: "flex",
+    // display: "flex",
     justifyContent: "center",
     backgroundImage: `url(${bg})`,
     backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
-    height: "20vh",
+    // height: "20vh",
     fontFamily: "Open Sans, sans-serif",
 
     backgroundPosition: "center", // Adjust based on your preference
   };
   return (
-    <div className="lg:max-w-[1200px] lg:container lg:mx-auto mx-3 my-20">
+    <div className="lg:max-w-[1200px] lg:container lg:mx-auto mx-3 my-10">
       <div
         style={styles}
-        className="flex justify-center items-center min-h-60 lg:h-[30vh] rounded-badge"
+        className="flex justify-center items-center rounded-badge"
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div className="text-center">

@@ -7,7 +7,7 @@ const Work = () => {
       </h2>
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         <div
-          data-aos="fade-right"
+          data-aos="fade-up"
           className="card card-compact w-full min-h-[200px] bg-[#F1F1F1]  rounded-xl"
         >
           <iframe
@@ -47,7 +47,7 @@ const Work = () => {
           </div>
         </div>
         <div
-          data-aos="fade-left"
+          data-aos="fade-up"
           className="card card-compact w-full min-h-[200px] bg-[#F1F1F1]  rounded-xl"
         >
           <iframe
