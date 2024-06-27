@@ -6,7 +6,10 @@ const Work = () => {
         Our Work
       </h2>
       <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-        <div className="card card-compact w-full min-h-[200px] bg-[#F1F1F1]  rounded-xl">
+        <div
+          data-aos="fade-right"
+          className="card card-compact w-full min-h-[200px] bg-[#F1F1F1]  rounded-xl"
+        >
           <iframe
             className="rounded-t-xl min-h-[200px]"
             src="https://www.youtube.com/embed/s5hEEFpzHN0?si=D_bnlNtU_HGdg45V"
@@ -23,7 +26,10 @@ const Work = () => {
             </p>
           </div>
         </div>
-        <div className="card card-compact w-full min-h-[200px] bg-[#F1F1F1]  rounded-xl">
+        <div
+          data-aos="fade-down"
+          className="card card-compact w-full min-h-[200px] bg-[#F1F1F1]  rounded-xl"
+        >
           <iframe
             className="rounded-t-xl min-h-[200px]"
             src="https://www.youtube.com/embed/wR7wehW-kLo?si=8IZyO2i5HTcmA1v6"
@@ -40,7 +46,10 @@ const Work = () => {
             </p>
           </div>
         </div>
-        <div className="card card-compact w-full min-h-[200px] bg-[#F1F1F1]  rounded-xl">
+        <div
+          data-aos="fade-left"
+          className="card card-compact w-full min-h-[200px] bg-[#F1F1F1]  rounded-xl"
+        >
           <iframe
             className="rounded-t-xl min-h-[200px]"
             src="https://www.youtube.com/embed/2JSDeDEnTaw?si=nNi_niX_utPPbZbF"
