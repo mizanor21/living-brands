@@ -5,12 +5,12 @@ import Home from "../components/Home/Home";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/profile",
     element: <MainLayout></MainLayout>,
     errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
-        path: "/",
+        path: "/profile",
         element: <Home></Home>,
       },
     ],
