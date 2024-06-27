@@ -9,7 +9,7 @@ const Journey = () => {
     backgroundPosition: "center", // Adjust based on your preference
   };
   return (
-    <div className="lg:max-w-[1000px] lg:container lg:mx-auto mx-5 my-10">
+    <div className="lg:max-w-[1000px] lg:container lg:mx-auto mx-3 my-10">
       <div
         style={styles}
         className="flex justify-center items-center min-h-60 lg:h-[40vh] rounded-badge"

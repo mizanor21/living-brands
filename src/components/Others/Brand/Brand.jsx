@@ -16,7 +16,7 @@ import brand18 from "../../../assets/images/l-18.png";
 const Brand = () => {
   return (
     <div className="my-20 lg:container lg:mx-auto">
-      <h3 className="text-center mb-10 text-4xl font-medium text-[#185C5D]">
+      <h3 className="text-center mb-10 text-4xl font-semibold text-[#185C5D]">
         Our Beloved Brands
       </h3>
       <div className="carousel-wrapper">

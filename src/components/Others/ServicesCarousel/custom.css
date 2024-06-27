@@ -1,10 +1,6 @@
-.slick-slider .slick-prev:before,
-.slick-slider .slick-next:before {
-  color: #185c5d !important;
-  font-size: 55px !important;
+.services {
+  font-family: "Roboto", sans-serif;
 }
-
-/* Ensure the container takes up the specified height */
 .hover-container {
   position: relative;
   /* background-color: #1a202c; Initial background color */

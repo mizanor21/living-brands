@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unknown-property */
 const Work = () => {
   return (
-    <div className="my-14 container mx-auto max-w-[1200px]">
+    <div className="my-14 mx-3 lg:container lg:mx-auto lg:max-w-[1200px]">
       <h2 className="text-4xl text-center text-[#0A5C5B] font-semibold mb-10">
         Our Work
       </h2>
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         <div className="card card-compact w-full min-h-[200px] bg-[#F1F1F1]  rounded-xl">
           <iframe
             className="rounded-t-xl min-h-[200px]"
