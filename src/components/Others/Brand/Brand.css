@@ -4,15 +4,15 @@
 
 .carousel-container {
   display: flex;
-  gap: 30px; /* Add gap to provide spacing between items */
+  gap: 20px; /* Adjust the gap value to control the space between items */
 }
 
 .carousel-container-1 {
-  animation: scroll-left 20s infinite;
+  animation: scroll-left 25s linear infinite;
 }
 
 .carousel-container-2 {
-  animation: scroll-right 20s infinite;
+  animation: scroll-right 25s linear infinite;
 }
 
 @keyframes scroll-left {
@@ -31,4 +31,29 @@
   50% {
     transform: translateX(50%);
   }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+  }
+
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(200%);
+    }
+  }
+}
+
+.carousel-item {
+  flex: 0 0 auto;
 }

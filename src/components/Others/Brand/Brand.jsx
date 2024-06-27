@@ -115,7 +115,7 @@ const Brand = () => {
         </div>
       </div>
       <div className="carousel-wrapper">
-        <div className="carousel-container carousel-container-2">
+        <div className="carousel-container carousel-container-2 flex flex-row-reverse">
           <div className="carousel-item">
             <img
               className="saturate-0 h-10 hover:saturate-100"
