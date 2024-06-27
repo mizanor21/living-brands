@@ -4,14 +4,31 @@
 
 .carousel-container {
   display: flex;
-  animation: scroll 25s infinite;
+  gap: 30px; /* Add gap to provide spacing between items */
 }
 
-@keyframes scroll {
+.carousel-container-1 {
+  animation: scroll-left 20s infinite;
+}
+
+.carousel-container-2 {
+  animation: scroll-right 20s infinite;
+}
+
+@keyframes scroll-left {
   0% {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-90%);
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
   }
 }
