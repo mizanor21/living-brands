@@ -1,22 +1,27 @@
 import bg from "../../../assets/images/about-bg.png";
 import arrowIcon from "../../../assets/images/about-arrow.png";
+
 const About = () => {
   const styles = {
     display: "flex",
     justifyContent: "center",
     backgroundImage: `url(${bg})`,
-    backgroundSize: "cover", // Adjust based on your preference
+    backgroundSize: "contain",
+    backgroundRepeat: "no-repeat",
+    height: "20vh",
+    fontFamily: "Open Sans, sans-serif",
+
     backgroundPosition: "center", // Adjust based on your preference
   };
   return (
-    <div className="lg:max-w-[1300px] lg:container lg:mx-auto mx-3 my-10">
+    <div className="lg:max-w-[1200px] lg:container lg:mx-auto mx-3 my-20">
       <div
         style={styles}
         className="flex justify-center items-center min-h-60 lg:h-[30vh] rounded-badge"
       >
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           <div className="text-center">
-            <h2 className="text-2xl lg:text-4xl font-sans font-bold  lg:pr-5 mb-2">
+            <h2 className="text-2xl lg:text-4xl font-bold  lg:pr-5 mb-2">
               What defines us
             </h2>
             <div className="flex justify-center">
