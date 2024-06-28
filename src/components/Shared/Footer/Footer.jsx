@@ -15,10 +15,34 @@ const Footer = () => {
       </footer>
       <footer className="footer block lg:flex lg:justify-between border-base-300 border-t px-10 py-4 text-white justify-center">
         <div className="flex justify-center items-center gap-4 text-3xl">
-          <FaFacebook />
-          <FaInstagramSquare />
-          <FaYoutube />
-          <FaLinkedin />
+          <a
+            href="https://www.facebook.com/Livingbrands.co"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook />
+          </a>
+          <a
+            href="https://www.instagram.com/livingbrands.co/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagramSquare />
+          </a>
+          <a
+            href="https://www.youtube.com/@livingbrands862"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaYoutube />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/livingbrandsbyhabson/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
         </div>
         <div className="mt-5">
           <span className="flex items-center gap-2">
