@@ -14,8 +14,8 @@ const Footer = () => {
       <footer className="footer text-base-content p-10 items-center justify-center">
         <img className="max-h-[230px] max-w-[900px]" src={logo} alt="" />
       </footer>
-      <footer className="footer block lg:flex lg:justify-between border-base-300 border-b px-10 py-4 text-white justify-center">
-        <div className="flex justify-center items-center gap-3 text-3xl">
+      <footer className="footer block lg:flex lg:justify-between border-t border-gray-400 px-10 py-4 text-white justify-center items-center">
+        <div className="flex justify-center items-center gap-2 text-3xl">
           <Link
             to="https://www.facebook.com/Livingbrands.co"
             target="_blank"
@@ -45,7 +45,7 @@ const Footer = () => {
             <FaLinkedin />
           </Link>
         </div>
-        <div className="mt-5">
+        <div>
           <span className="flex items-center gap-2">
             <CiLocationOn className="text-3xl" />{" "}
             <p>
@@ -58,19 +58,6 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className="flex justify-center text-white py-5">
-        <small>
-          © 2024 Design & Dveloped By{" "}
-          <a
-            to="https://www.goinnovior.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#83bf24]"
-          >
-            Goinnovior Limited
-          </a>
-        </small>
-      </div>
     </div>
   );
 };
