@@ -48,9 +48,9 @@ const Footer = () => {
         <div>
           <span className="flex items-center gap-2">
             <CiLocationOn className="text-3xl" />{" "}
-            <p>
+            <address>
               Hosue: 230, New D.O.H.S Lake Road, Lane-16, Mohakhali, Dhaka-1206.
-            </p>
+            </address>
           </span>
           <div className=" flex items-center justify-end gap-2">
             <FaRegCopyright className="text-xl" />
