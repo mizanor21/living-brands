@@ -1,20 +1,50 @@
+import { useRef, useEffect } from "react";
 import bg from "../../../assets/images/about-bg.png";
 import arrowIcon from "../../../assets/images/about-arrow.png";
 
 const About = () => {
+  const arrowRef = useRef(null);
+  const requestRef = useRef(null);
+  const mousePos = useRef({ x: 0, y: 0 });
+
+  const handleMouseMove = (e) => {
+    mousePos.current = { x: e.clientX, y: e.clientY };
+  };
+
+  const updateArrowRotation = () => {
+    const arrow = arrowRef.current;
+    if (arrow) {
+      const rect = arrow.getBoundingClientRect();
+      const arrowX = rect.left + rect.width / 2;
+      const arrowY = rect.top + rect.height / 2;
+
+      const angle =
+        Math.atan2(mousePos.current.y - arrowY, mousePos.current.x - arrowX) *
+        (90 / Math.PI);
+      arrow.style.transform = `rotate(${angle}deg)`;
+    }
+    requestRef.current = requestAnimationFrame(updateArrowRotation);
+  };
+
+  useEffect(() => {
+    requestRef.current = requestAnimationFrame(updateArrowRotation);
+    return () => cancelAnimationFrame(requestRef.current);
+  }, []);
+
   const styles = {
-    // display: "flex",
     justifyContent: "center",
     backgroundImage: `url(${bg})`,
     backgroundSize: "contain",
     backgroundRepeat: "no-repeat",
-    // height: "20vh",
     fontFamily: "Open Sans, sans-serif",
-
-    backgroundPosition: "center", // Adjust based on your preference
+    backgroundPosition: "center",
   };
+
   return (
-    <div className="lg:max-w-[1200px] lg:container lg:mx-auto mx-3 my-10">
+    <div
+      className="lg:max-w-[1200px] lg:container lg:mx-auto mx-3 my-10"
+      onMouseMove={handleMouseMove}
+    >
       <div
         style={styles}
         className="flex justify-center items-center rounded-badge"
@@ -25,7 +55,12 @@ const About = () => {
               What defines us
             </h2>
             <div className="flex justify-center">
-              <img src={arrowIcon} className="w-36 rotate-180 " alt="" />
+              <img
+                src={arrowIcon}
+                className="w-36 transition-transform duration-300"
+                alt=""
+                ref={arrowRef}
+              />
             </div>
           </div>
           <div>
