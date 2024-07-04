@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react";
 import bg from "../../../assets/images/about-bg.png";
 import arrowIcon from "../../../assets/images/about-arrow.png";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const arrowRef = useRef(null);
@@ -74,11 +75,19 @@ const About = () => {
               bringing together the best creative minds, in-house specialists,
               industry partners, and technology leaders - pushing the boundaries
               of what&apos;s possible in digital marketing, crafting impactful
-              campaigns that ignite brand growth
+              campaigns that ignite brand growth.
             </p>
-            <button className="bg-[#185C5D] rounded-full mt-5 px-6 py-2 text-white">
-              Discover Our Dynamic Culture
-            </button>
+            <div className="mt-5">
+              <Link
+                to={
+                  "https://www.google.com/maps/place/Living+Brands,+House+230+Road+16,+Dhaka+1212/data=!4m2!3m1!1s0x3755c700426d1655:0x8a70d2c34d6aae47?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESCjExLjEzNS4xMDIYACDXggMqUSw5NDIxMjQ5Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxNzUyMyw5NDIxODY1Myw0NzA4NzExOCw0NzA4NDM5Myw5NDIxMzIwMEICQkQ%3D&g_st=aw"
+                }
+                target="_blank"
+                className="bg-[#185C5D] hover:bg-[#1d7374] rounded-full px-6 py-2 text-white"
+              >
+                Discover Our Dynamic Culture
+              </Link>
+            </div>
           </div>
         </div>
       </div>

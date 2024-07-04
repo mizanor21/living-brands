@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import bg from "../../../assets/images/cta-bg.png";
 
 const Elevate = () => {
@@ -26,9 +27,17 @@ const Elevate = () => {
               Ready to transform your digital presence? Let&apos;s create magic
               together! book our services now!
             </p>
-            <button className="bg-white rounded-full mt-5 px-6 py-2 text-[#185C5D] font-semibold">
-              Book A Call
-            </button>
+            <div className="mt-5">
+              <Link
+                to={
+                  "https://www.google.com/maps/place/Living+Brands/@23.7843436,90.3953062,17z/data=!3m1!4b1!4m6!3m5!1s0x3755c700426d1655:0x8a70d2c34d6aae47!8m2!3d23.7843436!4d90.3953062!16s%2Fg%2F11y5gz5c5_?entry=ttu"
+                }
+                target="_blank"
+                className="bg-white rounded-full mt-5 px-6 py-2 text-[#185C5D] hover:text-white hover:bg-[#1d7374] font-semibold"
+              >
+                Book A Call
+              </Link>
+            </div>
           </div>
         </div>
       </div>

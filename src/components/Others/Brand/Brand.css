@@ -8,11 +8,11 @@
 }
 
 .carousel-container-1 {
-  animation: scroll-left 25s linear infinite;
+  animation: scroll-left 25s infinite;
 }
 
 .carousel-container-2 {
-  animation: scroll-right 25s linear infinite;
+  animation: scroll-right 25s infinite;
 }
 
 @keyframes scroll-left {
@@ -20,7 +20,7 @@
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-50%);
+    transform: translateX(-40%);
   }
 }
 
@@ -29,7 +29,7 @@
     transform: translateX(0);
   }
   50% {
-    transform: translateX(50%);
+    transform: translateX(40%);
   }
 }
 
