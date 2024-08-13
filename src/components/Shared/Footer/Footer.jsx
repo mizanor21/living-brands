@@ -31,7 +31,7 @@ const Footer = () => {
             <FaInstagramSquare />
           </Link>
           <Link
-            to="https://www.youtube.com/@livingbrands862"
+            to="https://www.youtube.com/@LivingBrandsBD/videos"
             target="_blank"
             rel="noopener noreferrer"
           >
